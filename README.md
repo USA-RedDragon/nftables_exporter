@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/gh/Sheridan/nftables_exporter.svg?style=svg)](https://circleci.com/gh/Sheridan/nftables_exporter)
+[![Build/Push (master)](https://github.com/USA-RedDragon/nftables_exporter/actions/workflows/ci.yaml/badge.svg?branch=master)](https://github.com/USA-RedDragon/nftables_exporter/actions/workflows/ci.yaml)
 
 # nftables_exporter 
 Export nftables statistics to prometheus
