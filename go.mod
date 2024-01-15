@@ -6,6 +6,7 @@ require (
 	github.com/prometheus/client_golang v1.18.0
 	github.com/tidwall/gjson v1.17.0
 	gopkg.in/yaml.v2 v2.4.0
+	gopkg.in/yaml.v3 v3.0.1
 )
 
 require (
