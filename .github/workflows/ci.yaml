@@ -10,7 +10,7 @@ on:
 
 jobs:
   test:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
 
     steps:
       - name: Checkout
@@ -27,7 +27,7 @@ jobs:
         run: go test -v -cover -race ./...
 
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     needs: test
     strategy:
       matrix:
