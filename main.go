@@ -9,9 +9,8 @@ import (
 )
 
 var (
-	options         Options
-	logger          Logger
-	promhttpHandler = promhttp.Handler()
+	options Options
+	logger  Logger
 
 	tableChainsDesc = prometheus.NewDesc(
 		"nftables_table_chains",

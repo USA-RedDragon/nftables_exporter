@@ -2,7 +2,6 @@ package main
 
 import (
 	"errors"
-	"io/ioutil"
 	"log"
 	"os"
 	"os/exec"
@@ -13,7 +12,7 @@ import (
 // Parse json to gjson object
 func parseJSON(data string) (gjson.Result, error) {
 	if !gjson.Valid(data) {
-		return gjson.Parse("{}"), errors.New("Invalid JSON")
+		return gjson.Parse("{}"), errors.New("invalid JSON")
 	}
 	return gjson.Get(data, "nftables"), nil
 }
@@ -21,7 +20,7 @@ func parseJSON(data string) (gjson.Result, error) {
 // Reading fake nftables json
 func readFakeNFTables() (gjson.Result, error) {
 	logger.Verbose("Read fake nftables data from json: %s", options.Nft.FakeNftJSON)
-	jsonFile, err := ioutil.ReadFile(options.Nft.FakeNftJSON)
+	jsonFile, err := os.ReadFile(options.Nft.FakeNftJSON)
 	if err != nil {
 		logger.Error("Fake nftables data reading error: %s", err)
 	}
