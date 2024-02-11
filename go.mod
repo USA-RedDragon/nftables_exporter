@@ -1,6 +1,6 @@
 module github.com/USA-RedDragon/nftables_exporter
 
-go 1.21.7
+go 1.22.0
 
 require (
 	github.com/prometheus/client_golang v1.18.0
