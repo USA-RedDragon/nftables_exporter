@@ -4,7 +4,7 @@ go 1.22.4
 
 require (
 	github.com/prometheus/client_golang v1.19.1
-	github.com/tidwall/gjson v1.17.1
+	github.com/tidwall/gjson v1.17.2
 	gopkg.in/yaml.v3 v3.0.1
 )
 
