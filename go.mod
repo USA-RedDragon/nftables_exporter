@@ -3,7 +3,7 @@ module github.com/USA-RedDragon/nftables_exporter
 go 1.23.1
 
 require (
-	github.com/prometheus/client_golang v1.20.4
+	github.com/prometheus/client_golang v1.20.5
 	github.com/tidwall/gjson v1.17.3
 	gopkg.in/yaml.v3 v3.0.1
 )
